@@ -7,12 +7,11 @@ function App() {
 
   const colors = {
     plant: '#1EB865',
-    burgund: '#B81E1E',
-    heaven: '#4F90CD',
-    blueberry: '#685580'
+    burgund: '#DE3B3B',
+    blueberry: '#9F57FA'
   };
 
-  const [number, setNumber] = useState(1);
+  const [number, setNumber] = useState(2);
   const [bgcolor, setBgcolor] = useState(colors.plant)
 
   const handleMinus = () => {
@@ -26,14 +25,11 @@ function App() {
 
   useEffect(()=>{
     switch(number){
-      case 1:
+      case 2:
         setBgcolor(colors.plant)
         break;
-      case 2:
-        setBgcolor(colors.burgund)
-        break;
       case 3:
-        setBgcolor(colors.heaven)
+        setBgcolor(colors.burgund)
         break;
       case 4:
         setBgcolor(colors.blueberry)
