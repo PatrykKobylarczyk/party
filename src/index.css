@@ -15,3 +15,186 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* animations */
+
+.panelAnimation{
+  animation: panelAnimation .8s ease-in-out forwards ;
+}
+
+/* @keyframes panelAnimation {  
+  0%, 100%{
+    transform: scale(1);
+  }
+  30%{
+    transform: scale(.97)
+  }
+} */
+
+/* second guy */
+
+.secondGuyMoves{
+  animation: secondGuyMoves 1s ease-in-out forwards;
+}
+
+@keyframes secondGuyMoves {
+  100% {
+    transform: rotate(-60deg);
+  }
+}
+
+
+.secondGuyMovesBack{
+  animation: secondGuyMovesBack 1s ease-in-out forwards;
+}
+
+@keyframes secondGuyMovesBack {
+  0%{
+    transform: rotate(-60deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.secondGuySecondMove{
+  animation: secondGuySecondMove 1s ease-in-out forwards;
+}
+
+@keyframes secondGuySecondMove{
+  0%{
+    transform: rotate(-60deg);
+  }
+  100% {
+    transform: rotate(-90deg) translateY(-4px);
+  }
+}
+
+.secondGuySecondMoveBack{
+  animation: secondGuySecondMoveBack 1s ease-in-out forwards;
+}
+
+@keyframes secondGuySecondMoveBack{
+  0% {
+    transform: rotate(-90deg) translateY(-4px);
+  }
+
+  100%{
+    transform: rotate(-60deg) translateY(0);
+  }
+}
+
+
+
+/* third guy */
+
+.thirdGuyComes{
+  animation: thirdGuyComes 1s ease-in-out forwards;
+}
+
+@keyframes thirdGuyComes {
+ 
+  50%{
+    opacity:0
+  }
+  60%{
+    opacity:1;
+  }
+  100%{
+    transform: translate(-125px, 74px);
+    opacity: 1;
+  }
+}
+
+.thirdGuyMoves{
+  animation: thirdGuyMoves 1s ease-in-out forwards;
+}
+
+@keyframes thirdGuyMoves {
+ 
+  0%{
+    transform: translate(-125px, 74px);
+    opacity: 1;
+  }
+  100%{
+    transform: translate(-130px, 70px) rotate(-55deg);
+    opacity: 1;
+  }
+}
+
+.thirdGuyMovesBack{
+  animation: thirdGuyMovesBack 1s ease-in-out forwards;
+}
+
+@keyframes thirdGuyMovesBack {
+ 
+  0%{
+    transform: translate(-130px, 70px) rotate(-55deg);
+    opacity: 1;
+  }
+  100%{
+    transform: translate(-125px, 74px) rotate(0);
+    opacity: 1;
+  }
+}
+
+
+.thirdGuyLeaves{
+  animation: thirdGuyLeaves 1s ease-in-out forwards;
+}
+
+@keyframes thirdGuyLeaves {
+  0%{
+    transform: translate( -125px, 74px);
+    opacity: 1;
+  }
+  40%{
+    opacity:1
+  }
+  50%{
+    opacity:0
+  }
+  100%{
+    transform: translate(0, 0);
+  }
+}
+
+
+
+/* fourth guy */
+
+.fourthGuyComes{
+  animation: fourthGuyComes 1s ease-in-out forwards;
+}
+
+@keyframes fourthGuyComes {
+  0%{
+    transform: translateX(100px);
+  }
+  40%{
+    opacity:1 ;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.fourthGuyLeaves{
+  animation: fourthGuyLeaves 1s ease-in-out forwards;
+}
+
+@keyframes fourthGuyLeaves {
+  0%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+  60%{
+    opacity:1 ;
+  }
+  100% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+}
+
