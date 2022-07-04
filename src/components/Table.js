@@ -9,7 +9,7 @@ import FourthGuy from './FourthGuy';
 const Table = ({ animationClass }) => {
 
     return (
-        <div className='w-full h-full grid place-items-center'>
+        <div className='w-full h-full flex justify-center items-center'>
             <div className='w-14 h-14 rounded-full bg-white absolute'></div>
             <FirstGuy animationClass={animationClass} />
             <SecondGuy animationClass={animationClass} />
