@@ -11,8 +11,6 @@ function App() {
     blueberry: '#9F57FA'
   };
 
-  const pulseAnimation = 'animation: pulsate-bck 1s ease-in-out both';
-
   const [number, setNumber] = useState(2);
   const [bgcolor, setBgcolor] = useState(colors.plant);
 
@@ -36,7 +34,6 @@ function App() {
       default:
         console.log('Opss...');
     }
-    
     return number < 4 ? setNumber(prev => prev + 1) : () => { };
   }
 
@@ -85,11 +82,10 @@ function App() {
 
   useEffect(() => {
     switchBackground()
-    console.log(number);
   }, [switchBackground])
 
   return (
-    <div className='w-full h-screen grid place-items-center' style={{ backgroundColor: `${bgcolor}` }}>
+    <div className=' w-full h-screen grid place-items-center app' style={{ backgroundColor: `${bgcolor}` }}>
       <div className='w-96 h-32 bg-white flex rounded-2xl shadow-2xl'>
         <section className="w-1/3 bg-gray-300 h-full rounded-l-2xl relative">
           <Table number={number} animationClass={animationClass} />
